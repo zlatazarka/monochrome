@@ -1,0 +1,1276 @@
+@import url("./fonts.css");
+/*Сделать анимацию прикольную*/
+body{
+    overflow-x: hidden;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    font-family: 'Manrope-Regular';
+}
+.header .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header .container .up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+.header .container .up .language{
+    display: flex;
+    align-items: center;
+}
+.header .container .up .language h3{
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+.header .container .up h2{
+    text-transform: uppercase;
+}
+.header .container .up .links{
+    display: flex;
+}
+.header .container .up .links i{
+    margin-left: 15px;
+}
+.header .container .line{
+    background-color: black;
+    height: 3px;
+    width: 100%;
+}
+.header .container .navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}
+.header .container .navigation h4{
+    text-transform: uppercase;
+}
+.header .container .up .links .fa-solid{
+    fill: none;
+}
+
+.monochrom{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+    font-family: 'Manrope-Medium';
+}
+.monochrom .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.monochrom .container .text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.monochrom .container .text h1{
+    text-transform: uppercase;
+    font-size: 150px;
+    font-weight: 500;
+}
+.monochrom .container .text h5{
+    font-size: 20px;
+    text-align: left;
+    width: 23%;
+    margin-top: 95px;
+    margin-left: 5px;
+}
+.monochrom .container .img img:nth-child(2){
+    margin-left: 25px;
+}
+
+.category{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+.category .container{
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+}
+.category .container .img{
+    display: flex;
+    justify-content: space-between;
+}
+.category .container .text{
+    font-family: "NeutrelFace";
+    font-size: 40px;
+}
+.category .container .img .block p{
+    font-size: 20px;
+    font-family: "Manrope-Medium";
+    font-weight: 600;
+}
+
+.lead{
+    background-image: url(../img/6.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover; /*Поработать с картинкой*/
+    margin-bottom: 150px;
+}
+.lead .container{
+    height: 780px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lead .container .text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lead .container .text h2{
+    font-family: "NeutrelFace";
+    font-size: 70px;
+    font-weight: 500;
+    color: white;
+    padding-top: 80px;
+    margin-bottom: 0%;
+}
+.lead .container .text p{
+    color: white;
+    font-size: 25px;
+    width: 55%;
+    margin-top: 10px;
+    font-family: "Manrope-Medium";
+}
+.lead .container a{
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-family: "NeutrelFace";
+    margin-top: 15px;
+}
+
+.new_season{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.new_season .container{
+    width: 99%;
+}
+.new_season .container .grid{
+    display: grid;
+    grid-template-rows: repeat(16, 50px);
+    grid-template-columns: repeat(15, 70px);
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+    font-family: "Manrope-Medium";
+    font-weight: 600;
+}
+.new_season .container .grid .text_1 h2{
+    font-family: "NeutrelFace";
+    font-size: 70px;
+    font-weight: 600;
+}
+.new_season .container .grid .text_1{
+    grid-column: 1/11;
+}
+.new_season .container .grid .text_2 h2{
+    font-family: "NeutrelFace";
+    font-size: 70px;
+    font-weight: 600;
+}
+.new_season .container .grid .text_2{
+    grid-row-start: 2;
+    margin-top: 20px;
+    grid-column: 7/16;
+}
+.new_season .container .grid .img_1{
+    grid-row-start: 6;
+    grid-column: 1/5;
+    font-size: 20px;
+}
+.new_season .container .grid .img_2{
+    grid-row-start: 6;
+    grid-column: 6/10;
+    font-size: 20px;
+}
+.new_season .container .grid .img_3{
+    grid-row-start: 11;
+    grid-column: 6/10;
+    margin-top: 8px;
+    font-size: 20px;
+}
+.new_season .container .grid .img_4{
+    grid-row-start: 6;
+    grid-column: 11/17;
+    font-size: 20px;
+}
+
+.advantages{
+    background-color: black;
+    color: white;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+.advantages .container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.advantages .container svg{
+    width: 29px;
+    fill: none;
+    stroke: white;
+    stroke-width: 20px;
+}
+.advantages .container h4{
+    font-size: 18px;
+    font-family: "NeutrelFace";
+    font-weight: 400;
+}
+.advantages .container p{
+    font-size: 18px;
+    font-family: "Manrope-Regular";
+}
+.advantages .container .delivery{
+    padding-top: 9px;
+    width: 22%;
+}
+.advantages .container .delivery svg{
+    width: 35px;
+}
+.advantages .container .safety{
+    width: 23%;
+}
+.advantages .container .support{
+    width: 23%;
+    padding-top: 5px;
+}
+.advantages .container .discount{
+    width: 23%;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.about .container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .container .text{
+    width: 56%;
+}
+.about .container .text h1{
+    font-size: 70px;
+    font-family: "NeutrelFace";
+    font-weight: 600;
+}
+.about .container .text p{
+    font-size: 20px;
+    font-family: "Manrope-Medium";
+    font-weight: 600;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 200px;
+    font-family: "Manrope-Regular";
+}
+.footer .container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+.footer .container .internet{
+    display: flex;
+    justify-content: space-between;
+    width: 12%;
+}
+.footer .container .internet svg{
+    width: 20px;
+    fill: white;
+    border: 1px solid white ;
+    padding: 7px;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+.subscription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-bottom: 1px;
+    height: 900px;
+}
+.subscription .container{
+    width: 90%;
+    color: white;
+}
+.subscription .container .grid{
+    display: grid;
+    grid-template-rows: repeat(4, 50px);
+    grid-template-columns: repeat(14, 70px);
+    grid-column-gap: 15px;
+    grid-row-gap: 5px;
+}
+.subscription .container .grid h1{
+    font-family: "NeutrelFace";
+    font-size: 60px;
+    font-weight: 500;
+}
+.subscription .container .grid .text_1{
+    grid-column: 1/6;
+}
+.subscription .container .grid .text_2{
+    grid-column: 5/14;
+    grid-row: 2/3;
+    margin-top: 15px;
+}
+.subscription .container .content .block:nth-child(1){
+    width: 55%;
+    font-size: 20px;
+    font-family: "Manrope-Medium";
+}
+.subscription .container .content .block:nth-child(1) p{
+    margin-bottom: 43px;
+}
+
+.subscription .container .content{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Manrope-Regular";
+}
+.subscription .container .content .block:nth-child(2){
+    width: 40%;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.subscription .container .content .block:nth-child(2) .input{
+    display: flex;
+    flex-direction: column;
+}
+.subscription .container .content .block:nth-child(2) .input input{
+    width: 50%;
+    height: 40px;
+    border: 1px solid rgb(67, 67, 67);
+    background: none;
+    padding-left: 15px;
+    color: white;
+}
+.subscription .container .content .block:nth-child(2) .input label{
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.subscription .container .content .block:nth-child(2) .Type{
+    margin-top: 35px;
+    margin-bottom: 0%;
+}
+.subscription .container .content .block:nth-child(2) .radio{
+    display: flex;
+    align-items: center;
+}
+.subscription .container .content .block:nth-child(2) .check{
+    display: flex;
+}
+.subscription .container .content .block:nth-child(2) .button a{
+    background-color: white;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 18px;
+    padding-left: 160px;
+    padding-right: 160px;
+    color: black;
+    font-family: "NeutrelFace";
+}
+.subscription .container .content .block:nth-child(2) .button{
+    margin-top: 30px;
+}
+
+
+#input_1:checked ~ #label1,
+#input_2:checked ~ #label2,
+#input_3:checked ~ #label3{
+    text-decoration: underline;
+}
+.product_card .container .tabs input{
+    display: none;
+}
+.product_card .container .tabs .perecluch{
+    width: 100%;
+    overflow: hidden;
+}
+.product_card .container .tabs .perecluch .line{
+    width: 300%;
+    display: flex;
+}
+.product_card .container .tabs .perecluch .line .text{
+    width: calc(100%/3);
+    transition: 1s;
+}
+#input_1:checked ~ .perecluch .text{
+    transition: 1s;
+    transform: translate(0);
+}
+#input_2:checked ~ .perecluch .text{
+    transition: 1s;
+    transform: translate(-100%);
+}
+#input_3:checked ~ .perecluch .text{
+    transition: 1s;
+    transform: translate(-200%);
+}
+@keyframes slider{
+    0%, 20%{
+        transform: translateX(0);
+    }
+    30%, 70%{
+        transform: translateX(-100%);
+    }
+    80%, 100%{
+        transform: translateX(-200%);
+    }
+}
+
+.product_card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    font-family: 'Manrope-Medium';
+}
+.product_card .container{
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+}
+.product_card .container .img{
+    width: 50%;
+}
+.product_card .container .about_product{
+    width: 45%;
+}
+.product_card .container .about_product .title{
+    display: flex;
+    justify-content: space-between;
+}
+.product_card .container .about_product .title .rate{
+    display: flex;
+    align-items: baseline;
+}
+.product_card .container .about_product .title .rate p{
+    margin-left: 5px;
+    font-size: 17px;
+}
+.product_card .container .about_product .title .name{
+    font-size: 55px;
+    text-transform: uppercase;
+}
+.product_card .container .about_product .about{
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: 'Manrope-Medium';
+    font-weight: 650;
+}
+.product_card .container .about_product .button a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+    padding-left: 180px;
+    padding-right: 180px;
+}
+.product_card .container .about_product .button{
+    margin-bottom: 55px;
+}
+.product_card .container .tabs .line_1{
+    height: 1px;
+    background-color: rgba(222, 222, 222, 0.63);
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 50%;
+}
+.product_card .container .tabs label{
+    margin-right: 40px;
+    color: rgb(165, 165, 165);
+}
+#input_1:checked ~ #label1,
+#input_2:checked ~ #label2,
+#input_3:checked ~ #label3{
+    color: black;
+}
+.product_card .container .about_product .count{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    font-size: 23px;
+    font-family: "Manrope-Regular";
+    font-weight: 400;
+}
+.product_card .container .about_product .count input{
+    width: 60%;
+    margin-right: 2px;
+    height: 45px;
+    padding-left: 15px;
+    font-size: 15px;
+    font-family: "Manrope-Medium";
+    border: 1px solid rgb(222, 222, 222);
+}
+.product_card .container .tabs{
+    font-family: "Manrope-Medium";
+    font-weight: 600;
+}
+.product_card .container .size .title .table{
+    text-decoration: underline 1px;
+}
+.product_card .container .size .selector select{
+    display: block; 
+    font-size: 15px;
+    border: 1px solid rgb(222, 222, 222);
+    width: 100%;
+    font-family: "Manrope-Medium";
+    height: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    position: relative;
+    color: rgb(165, 165, 165);
+}
+
+@media (max-width: 1024px){
+    .container{
+        width: 952px;
+    }
+    .header .container .navigation {
+        width: 50%;
+    }
+    .monochrom .container .text h1 {
+        font-size: 110px;
+        font-weight: 500;
+    }
+    .monochrom .container .text h5 {
+        width: 30%;
+    }
+    .monochrom .container .img{
+        width: 95%;
+    }
+    .monochrom .container .img img:nth-child(1){
+        width: 74%;
+    }
+    .monochrom .container .img img:nth-child(2){
+        width: 23%;
+    }
+
+    .category .container .text{
+        font-size: 35px;
+    }
+    .category .container .img .block img{
+        width: 310px;
+    }
+    
+    .new_season .container .grid {
+        grid-template-columns: repeat(15, 60px);
+    }
+    .new_season .container .grid .text_1 {
+        grid-column: 1/11;
+    }
+    .new_season .container .grid .text_2 {
+        grid-column: 6/15;
+    }
+    .new_season .container .grid .text_1 h2 {
+        font-size: 60px;
+    }
+    .new_season .container .grid .text_2 h2 {
+        font-size: 60px;
+    }
+    .new_season .container .grid img{
+        width: 320px;
+    }
+    .new_season .container .grid p{
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    .new_season .container .grid .img_3 {
+        grid-row-start: 10;
+        margin-top: 22px;
+        grid-column: 5/10;
+        margin-left: 60px;
+    }
+    .new_season .container .grid .img_2 {
+        grid-column: 5/10;
+        margin-left: 60px;
+    }
+    .new_season .container .grid .img_4 {
+        grid-column: 10/15;
+        margin-left: 50px;
+    }
+
+    .product_card .container .img {
+        width: 50%;
+    }
+    .product_card .container .img img{
+        width: 500px;
+        height: 600px;
+        margin-top: 19px;
+    }
+    .product_card .container .about_product .count {
+        font-size: 19px; 
+    }
+    .product_card .container .about_product .button a {
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+
+    .about .container .text {
+        width: 50%;
+    }
+
+    .subscription .container .grid {
+        grid-column-gap: 5px;
+    }
+    .subscription .container .grid h1 {
+        font-size: 55px;
+    }
+    .subscription .container .content .block:nth-child(1) img{
+        width: 500px;
+    }
+    .subscription .container .content .block:nth-child(2) {
+        width: 40%;
+    }
+    .subscription .container .content .block:nth-child(2) .input input {
+        width: 80%;
+    }
+    .subscription .container .content .block:nth-child(2) .button a {
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+
+    .footer .container .internet {
+        width: 15%;
+    }
+    .footer {
+        height: 150px;
+    }
+
+    .lead{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .container{
+        width: 720px;
+    }
+
+    .header .container .up h2 {
+        font-size: 20px;
+    }
+    .header .container .navigation {
+        width: 57%;
+    }
+
+    .monochrom .container .text h1 {
+        font-size: 90px;
+    }
+    .monochrom .container .text h5 {
+        width: 30%;
+        font-size: 16px;
+    }
+
+    .monochrom .container .img img:nth-child(1) {
+        width: 71%;
+    }
+    .monochrom .container .img img:nth-child(2) {
+        width: 22%;
+    }
+
+    .category .container .text {
+        font-size: 30px;
+    }
+    .category .container .img .block img {
+        width: 250px;
+    }
+
+    .new_season .container .grid {
+        grid-template-columns: repeat(15, 40px);
+        grid-template-rows: repeat(20, 50px);
+    }
+    .new_season .container .grid .text_1 h2 {
+        font-size: 49px;
+    }
+    .new_season .container .grid .text_2 h2 {
+        font-size:49px;
+    }
+    .new_season .container .grid .text_2 {
+        grid-column: 6/16;
+    }
+    .new_season .container .grid .img_1 {
+        grid-row-start: 5;
+    }
+    .new_season .container .grid .img_2 {
+        grid-row-start: 15;
+        grid-column: 1/7;
+        margin-left: 0%;
+    }
+    .new_season .container .grid .img_4 {
+        grid-row-start: 5;
+        margin-left: 10px;
+        grid-column: 9/15;
+    }
+    .new_season .container .grid .img_3 {
+        grid-row-start: 15;
+        margin-top: 0%;
+        grid-column: 8/15;
+    }
+    .new_season .container .grid img {
+        width: 370px;
+    }
+
+    .product_card .container .img img {
+        width: 400px;
+        height: 500px;
+        margin-top: 0px;
+    }
+    .product_card .container .about_product .count {
+        font-size: 14px;
+    }
+    .product_card .container {
+        align-items: center;
+    }
+    .product_card .container .about_product .button a {
+        padding-left: 95px;
+        padding-right: 95px;
+    }
+
+    .about .container .text {
+        width: 40%;
+    }
+    .subscription .container .content {
+       flex-direction: column;
+    }
+    .subscription .container .content .block:nth-child(1) {
+        display: flex;
+        width: 100%;
+    }
+    .subscription .container .content .block:nth-child(2) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .subscription .container .content .block:nth-child(1) img {
+        width: 350px;
+        margin-left: 20px;
+    }
+    .subscription .container .content .block:nth-child(2) .button a {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    .subscription .container .content .block:nth-child(2) form{
+        display: flex;
+    }
+    .subscription .container .content .block:nth-child(2) .first{
+        width: 60%;
+    }
+    .subscription .container .content .block:nth-child(2) .second{
+        width: 50%;
+    }
+    .subscription .container .content .block:nth-child(2) .input input {
+        width: 80%;
+    }
+    .subscription .container .content .block:nth-child(2) .button {
+        margin-top: 50px;
+        margin-left: 130px;
+    }
+    .subscription .container .grid {
+        grid-template-columns: repeat(16, 40px);
+    }
+    .subscription .container .grid .text_2 {
+        grid-column: 5/16;
+    }
+    .subscription .container .grid h1 {
+        font-size: 44px;
+    }
+
+    .footer .container .internet {
+        width: 18%;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        width: 380px;
+    }
+
+    .monochrom .container .text h1 {
+        font-size: 85px;
+    }
+    .monochrom .container .text h5 {
+        font-size: 15px;
+    }
+
+    .category .container .text {
+        font-size: 25px;
+    }
+    .category .container .img .block img {
+        width: 240px;
+    }
+
+    .lead{
+        display: flex;
+        justify-content: center;
+    }
+
+    .new_season .container .grid img {
+        width: 340px;
+    }
+    .new_season .container .grid {
+        grid-template-columns: repeat(15, 39px);
+    }
+    .new_season .container .grid .text_1 h2 {
+        font-size: 48px;
+    }
+    .new_season .container .grid .text_2 h2 {
+        font-size: 48px;
+    }
+
+    .product_card .container {
+        flex-direction: column;
+    }
+    .product_card .container .img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .product_card .container .about_product {
+        width: 80%;
+    }
+    .product_card .container .img img {
+        width: 350px;
+        height: 100%;
+        margin-left: 120px;
+    }
+
+    .about .container {
+        flex-direction: column;
+    }
+    .about .container .text {
+        width: 90%;
+    }
+
+    .footer .container .internet {
+        width: 23%;
+        margin-left: 20px;
+    }
+    .footer .container .block{
+        width: 40%;
+    }
+    .footer .container .Confidentiality{
+        width: 40%;
+        margin-left: 40px;
+    }
+    .subscription .container .content .block:nth-child(2) .button {
+        margin-bottom: 50px;
+        margin-left: 90px;
+    }
+}
+
+@media (max-width: 576px){
+    .container{
+        width: 440px;
+    }
+
+    .header .container .navigation {
+        width: 90%;
+    }
+
+    .monochrom .container .text {
+        flex-direction: column;
+    }
+    .monochrom .container .text h5 {
+        width: 100%;
+        margin-top: 0%;
+        margin-left: 0%;
+        font-size: 20px;
+    }
+    .monochrom .container .text h1 {
+        margin-bottom: 0%;
+    }
+
+    .category .container .text {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .category .container .img {
+        flex-wrap: wrap;
+    }
+    .category .container .img .block img {
+        width: 265px;
+    }
+    .category .container .img .block:nth-child(3){
+        margin-left: 144px;
+    }
+    .category .container .img .block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .new_season .container .grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .new_season .container .grid .text_1 h2{
+        margin-bottom: 0%;
+    }
+    .new_season .container .grid .text_2 h2 {
+        margin-top: 0%;
+    }
+    .new_season .container .grid .text_2{
+        margin-bottom: 10px;
+    }
+    .new_season .container .grid img {
+        width: 440px;
+    }
+    .new_season .container .grid p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+    .new_season .container .grid .img_3 {
+        margin-left: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .new_season .container .grid .img_2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .new_season .container .grid .img_1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .new_season .container .grid .img_4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .new_season{
+        margin-bottom: 200px;
+    }
+
+    .product_card .container .img img {
+        margin-left: 43px;
+    }
+
+    .advantages {
+        height: 500px;
+    }
+    .advantages .container {
+        flex-wrap: wrap;
+    }
+    .advantages .container .delivery {
+        width: 45%;
+    }
+    .advantages .container .support {
+        width: 45%;
+    }
+    .advantages .container .safety {
+        width: 45%;
+    }
+    .advantages .container .discount {
+        width: 45%;
+    }
+
+    .advantages .container h4 {
+        font-size: 20px;
+    }
+
+    .subscription {
+        height: 100%;
+    }
+    .subscription .container .content .block:nth-child(1) {
+        flex-direction: column;
+        align-items: center;
+    }
+    .subscription .container .content .block:nth-child(1) img {
+        width: 400px;
+        margin-left: 0%;
+    }
+    .subscription .container .content .block:nth-child(1) p {
+        text-align: center;
+    }
+    .subscription .container .content .block:nth-child(2) form {
+        flex-direction: column;
+    }
+    .subscription .container .content .block:nth-child(2) .first {
+        width: 100%;
+    }
+    .subscription .container .content .block:nth-child(2) .second {
+        width: 100%;
+    }
+    .subscription .container .content .block:nth-child(2) .button {
+        margin-bottom: 50px;
+        margin-left: 0%;
+    }
+    .subscription .container .grid {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    .subscription .container .grid .text_1{
+        margin-top: 50px;
+    }
+    .subscription .container .grid .text_2{
+        margin-bottom: 50px;
+    }
+    .subscription .container .grid h1 {
+        margin-bottom: 0%;
+        margin-top: 0%;
+    }
+    .footer .container .internet {
+        width: 35%;
+        margin-left: 0%;
+    }
+}
+
+@media (max-width: 480px){
+    .container{
+        width: 95%;
+    }
+
+    .header .container .up {
+        flex-direction: column;
+    }
+    .header .container .up .language h3 {
+        margin-bottom: 0%;
+    }
+    .header .container .up .language {
+        display: flex;
+        align-items: baseline;
+    }
+    .header .container .up .links {
+        margin-bottom: 20px;
+    }
+
+    .header .container .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .monochrom .container .text h1 {
+        font-size: 75px;
+    }
+    .monochrom .container .text h5 {
+        text-align: center;
+        font-size: 25px;
+    }
+    .monochrom .container .img img:nth-child(1) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .monochrom .container .img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .monochrom .container .img img:nth-child(2) {
+        width: 50%;
+        margin-left: 0%;
+    }
+
+    .category .container .text {
+        font-size: 18px;
+    }
+    .category .container .img {
+        flex-direction: column;
+    }
+    .category .container .img .block:nth-child(3) {
+        margin-left: 0%;
+    }
+
+    .lead .container .text h2 {
+        font-size: 65px;
+    }
+    .new_season .container .grid .text_1 h2 {
+        font-size: 45px;
+    }
+    .new_season .container .grid .text_2 h2 {
+        font-size: 45px;
+    }
+
+    .product_card .container .img img {
+        margin-left: 9px;
+    }
+
+    .subscription .container .grid h1 {
+        font-size: 37px;
+    }
+
+    .subscription .container .content .block:nth-child(2) .button a {
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+
+    .footer .container .block {
+        width: 33%;
+        margin-left: 10px;
+    }
+    .footer .container .internet {
+        width: 33%;
+    }
+    .footer .container .Confidentiality {
+        width: 33%;
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 428px){
+    .container{
+        width: 95%;
+    }
+
+    .monochrom .container .text h1 {
+        font-size: 60px;
+    }
+
+    .category .container .text {
+        font-size: 14px;
+    }
+
+    .lead .container .text h2 {
+        font-size: 53px;
+    }
+    .lead{
+        background-position: right;
+    }
+
+    .new_season .container .grid .text_1 h2 {
+       text-align: center;
+    }
+    .new_season .container .grid .text_2 h2 {
+        text-align: center;
+    }
+
+    .product_card .container .img img {
+        margin-left: 0%;
+        width: 320px;
+    }
+    .product_card {
+        justify-content: center;
+    }
+    .product_card .container .about_product .count {
+        font-size: 11px;
+    }
+    .product_card .container .about_product .button a {
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+    .product_card .container .about_product .button {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .advantages .container h4 {
+        font-size: 18px;
+    }
+
+    .subscription .container .grid h1 {
+        text-align: center;
+    }
+    .subscription .container .content .block:nth-child(1) img {
+        width: 340px;
+    }
+    .subscription .container .content .block:nth-child(2) .button{
+        display: flex;
+        justify-content: center;
+    }
+    .subscription .container .content .block:nth-child(2) .button a {
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+
+    .footer {
+        height: 100%;
+    }
+    .footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer .container .Confidentiality {
+        width: 50%;
+        margin-left: 0%;
+    }
+    .footer .container .internet {
+        width: 39%;
+    }
+    .footer .container .block {
+        width: 50%;
+        margin-left: 0%;
+    }
+}
+
+@media (max-width: 360px){
+    .container{
+        width: 95%;
+    }
+
+    .category .container .text {
+        font-size: 12px;
+    }
+    .lead .container .text h2 {
+        font-size: 50px;
+    }
+    .new_season .container .grid img {
+        width: 355px;
+    }
+
+    .product_card .container {
+        align-items: start;
+        margin-left: 20px;
+    }
+    .product_card .container .img img {
+        width: 300px;
+    }
+    .product_card .container .about_product .count {
+        font-size: 10px;
+    }
+    .product_card .container .about_product .button a {
+        font-size: 15px;
+    }
+    .product_card .container .about_product {
+        width: 90%;
+    }
+
+    .subscription .container .content .block:nth-child(1) img {
+        width: 320px;
+    }
+}
